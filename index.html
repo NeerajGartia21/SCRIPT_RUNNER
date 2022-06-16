@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="line">Choose a line</label>
+        <select class="form-control" name="line" id="line">
+          <option value="RED">red</option>
+          <option value="YELLOW">yellow</option>
+          <option value="BLUE-I">blue-I</option>
+          <option value="BLUE-II">blue-II </option>
+          <option value="BLUE-III">blue-III </option>
+          <option value="GREEN">green</option>
+          <option value="VIOLET">violet</option>
+          <option value="ORANGE">orange</option>
+          <option value="PINK">pink </option>
+          <option value="MAGENTA-I">magenta-I</option>
+          <option value="GRAY">grey-10</option>
+          <option value="MAGENTA-II">magenta-II</option>
+        </select> 
+        <br>
+        <p>OR</p>
+        <label for="file">Upload a json file</label>
+        <input class="form-control" type="file" id="csvFile" accept=".json" />
+        <br />
+        <label for="url">Enter Traccar URL</label>
+        <input class="form-control" type="text" id="url" name="url" placeholder="Traccar server url">
+        <br>
+        <label for="deviceId">Enter Device Id</label>
+        <input class="form-control" type="number" id="deviceId" name="deviceId" placeholder="Device Id">
+        <br>
+        <label for="freq">Enter Frequency</label>
+        <input class="form-control" type="number" id="freq" name="freq" placeholder="Frequency in ms">
+        <br>
+        <input class="btn btn-primary" type="submit" name="" placeholder="submit" id="">
+      </form>
+
+      <div id="error"></div>
+</body>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</html>
